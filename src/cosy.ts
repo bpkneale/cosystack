@@ -3,7 +3,7 @@ import * as cdk from "@aws-cdk/core"
 import * as amplify from "@aws-cdk/aws-amplify"
 
 export class CosyStack extends cdk.Stack {
-    constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
+    constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
         super(scope, id, props);
 
         const frontend = new amplify.CfnApp(this, 'cosy-cuppies-frontend', {
